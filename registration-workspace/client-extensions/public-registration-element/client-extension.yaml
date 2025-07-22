@@ -1,0 +1,15 @@
+assemble:
+  - from: build/static
+    into: static
+public-registration-element:
+  cssURLs:
+    - css/main.*.css
+  friendlyURLMapping: public-registration-element
+  htmlElementName: public-registration-element
+  instanceable: false
+  name: Public Registration Element
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - js/main.*.js
+  useESM: true
