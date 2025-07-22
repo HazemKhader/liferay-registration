@@ -44,26 +44,25 @@ git clone https://github.com/HazemKhader/liferay-registration.git
 cd registration-workspace
 ```
 
-# Liferay Server
+# Run Liferay Server
 
-### 1. Start Embedded Server (`Jump to`[Testing](#testing) `Step`)
-
-```bash
-    blade server start
-```
-
-- **Login as Administrator:** `test@liferay.com:learn`
-
-### 2. Start your Liferay instance(`Continue step-by-step`)
+- Start your Liferay instance
 
 ## Deployment
 
 Build and deploy the Public Registration Element client-extension:
 
-```
+```bash
 # From the workspace root
 blade gw build
 blade gw deploy
+```
+
+or by using
+
+```
+gradlew :client-extensions:public-registration-element:build
+gradlew :client-extensions:public-registration-element:deploy
 ```
 
 ## Liferay Object Setup
@@ -160,7 +159,7 @@ blade gw deploy
 
 1.  Login as Administrator.
 
-    `test@liferay.com:learn`
+    Example: `test@liferay.com:learn`
 
 2.  Navigate to **Admin Pending Requests** page to view all pending cards where you can approve (`A new Liferay user is auto-created with the submitted data.`) or reject (`The request is marked as rejected.`) the request.
 
