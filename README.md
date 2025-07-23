@@ -27,7 +27,7 @@ Registration and approval workflow built on Liferay DXP. Guests can submit ID/Pa
 
 ## Prerequisites
 
-- **Java 11+**
+- **Java 17**
 - **Liferay DXP 7.4 GA132** (or compatible)
 - **Blade CLI** v7.0.3+
 - **Git**
@@ -47,6 +47,14 @@ cd registration-workspace
 # Run Liferay Server
 
 - Start your Liferay instance
+
+Or use blade to initialize the server
+
+```bash
+# From the workspace root
+blade server init
+blade server start
+```
 
 ## Deployment
 
